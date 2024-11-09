@@ -11,8 +11,9 @@
 	<groupId>com.eazybytes</groupId>
 	<artifactId>cards</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>cards</name>
-	<description>loan services</description>
+	<description>cards services</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -81,6 +82,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<image>
+						<name>namitrai/${project.artifactId}:s4</name>
+					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
