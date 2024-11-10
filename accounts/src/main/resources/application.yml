@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 8080
 spring:
   datasource:
     url: jdbc:h2:mem:testdb
@@ -24,8 +24,8 @@ spring:
 build:
   version: "3.0"
 
-cards:
-  message: "Welcome to EazyBank cards related local APIs "
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs "
   contactDetails:
     name: "John Doe - Developer"
     email: "john@eazybank.com"
