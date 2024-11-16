@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: git
+    #active: native
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/NamitRai/easybank-config"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+        # native:
+          # search-locations: "classpath:/config"
+          # search-locations: "file:///Users//eazybytes//Documents//config"
+encrypt:
+  key: "7429872GHFD123FG"
+server:
+  port: 8071
