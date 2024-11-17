@@ -20,9 +20,11 @@ spring:
     show-sql: true
   config:
     import: "configserver:http://localhost:8071"
+  devtools:
+    add-properties: false
 
 management:
-  endpoint:
+  endpoints:
     web:
       exposure:
         include: "*"
