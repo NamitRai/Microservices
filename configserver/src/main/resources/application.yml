@@ -17,6 +17,14 @@ spring:
         # native:
           # search-locations: "classpath:/config"
           # search-locations: "file:///Users//eazybytes//Documents//config"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
 encrypt:
   key: "7429872GHFD123FG"
 server:
